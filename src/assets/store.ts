@@ -1,15 +1,25 @@
-import { ref } from 'vue'
-import { menu } from '@/assets/data.ts'
+import { ref } from 'vue';
+import { menu } from '@/assets/data.ts';
+import type {Menu} from "@/assets/types.ts";
+
+let storeInstance: ReturnType<typeof createViewStore> | null = null;
+
+const createViewStore = () => {
+    const currentView = ref<keyof Menu>(menu.home as keyof Menu);
+
+    const setView = (view: keyof Menu) => {
+        currentView.value = view;
+    };
+
+    return { 
+        currentView,
+        setView
+    };
+};
 
 export const useViewStore = () => {
-    const currentView = ref<string>(menu.home)
-
-    const setView = (view: string) => {
-        currentView.value = view
+    if (!storeInstance) {
+        storeInstance = createViewStore();
     }
-
-    return {
-        currentView,
-        setView,
-    }
-}
+    return storeInstance;
+};
