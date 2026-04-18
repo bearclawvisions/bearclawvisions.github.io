@@ -1,0 +1,99 @@
+{
+  "menu": [
+    "Home",
+    "User",
+    "Projects"
+  ],
+  "general": {
+    "app": "BearClawVisions",
+    "kernel": "1.0.0",
+    "system": "online",
+    "status": "operational"
+  },
+  "projects": {
+    "work": [
+      "platforms for schools and universities to manage their students and assessments",
+      "background application to transform XML to PDF for publication of books",
+      "generation of metadata for images with AI",
+      "web application to search diaries with ElasticSearch"
+    ],
+    "personal": [
+      "website with Githup pages"
+    ]
+  },
+  "skills": {
+    "frontend": [
+      "JavaScript",
+      "TypeScript",
+      "Vue3",
+      "TailwindCSS",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "backend": [
+      "C#",
+      "ASP.NET",
+      "Java",
+      "Spring Boot",
+      "Python",
+      "NodeJS",
+      "PostgreSQL",
+      "SQL Server",
+      "REST API",
+      "SOAP",
+      "WCF",
+      "Hangfire",
+      "ElasticSearch",
+      "XSLT",
+      "XML",
+      "JSON"
+    ],
+    "tools": [
+      "Maven",
+      "Docker",
+      "Kubernetes",
+      "Azure",
+      "AWS",
+      "Git",
+      "Jira",
+      "Fiddler",
+      "Postman",
+      "Jetbrains IDE's",
+      "Visual Studio",
+      "Azure DevOps",
+      "CI/CD",
+      "IIS"
+    ],
+    "softSkills": [
+      "Lean",
+      "SCRUM",
+      "Agile"
+    ]
+  },
+  "user": {
+    "name": "Classified",
+    "role": "Software Engineer",
+    "location": "The grid",
+    "github": "https://github.com/BearClawVisions",
+    "summary": "I am a software engineer with a passion for creating innovative solutions.",
+    "speech": [
+      "Dutch",
+      "English"
+    ],
+    "hobbies": [
+      "Gaming",
+      "3D printing",
+      "Board games",
+      "Programming",
+      "Gamedev"
+    ],
+    "certificates": [
+      "Cisco Ethical Hacking",
+      "Microsoft AZ-900",
+      "iSQI ISTQB Tester",
+      "upd Greenbelt Lean",
+      "EXIN Agile Scrum Foundation",
+      "Awaretrain AVG awareness training" 
+    ]
+  }
+}
