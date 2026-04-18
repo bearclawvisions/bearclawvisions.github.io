@@ -1,9 +1,9 @@
 {
-  "menu": [
-    "Home",
-    "User",
-    "Projects"
-  ],
+  "menu": {
+    "home": "home",
+    "user": "user",
+    "projects": "projects"
+  },
   "general": {
     "app": "BearClawVisions",
     "system": "online",

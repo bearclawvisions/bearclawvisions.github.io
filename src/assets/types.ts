@@ -28,8 +28,14 @@ export interface User {
     certificates: string[]
 }
 
+export interface Menu {
+    home: string
+    user: string
+    projects: string
+}
+
 export interface AppData {
-    menu: string[]
+    menu: Menu
     general: General
     projects: Projects
     skills: Skills

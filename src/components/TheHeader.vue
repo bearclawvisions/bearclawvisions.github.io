@@ -35,7 +35,3 @@ const generalEntries = Object.entries(general).slice(1);
     
   </header>
 </template>
-
-<style scoped>
-
-</style>

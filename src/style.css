@@ -124,7 +124,7 @@
 }
 
 .neon-text {
-  text-shadow: 0 0 5px var(--color-neon-pink), 0 0 0.63rem var(--color-neon-pink);
+  text-shadow: 0 0 0.15rem var(--color-neon-pink), 0 0 0.5rem var(--color-neon-pink);
 }
 
 .sub-header {
@@ -146,7 +146,7 @@
 /* ═══════════════════════════════════════════════════════════════ */
 /* [Identity] */
 /* ═══════════════════════════════════════════════════════════════ */
-.portfolio-container {
+.terminal-container {
   @apply space-y-8;
 }
 

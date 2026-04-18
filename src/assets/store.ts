@@ -2,12 +2,10 @@ import { ref } from 'vue'
 import { menu } from '@/assets/data.ts'
 
 export const useViewStore = () => {
-    const currentView = ref<string>(menu[0] || 'Home')
+    const currentView = ref<string>(menu.home)
 
     const setView = (view: string) => {
-        if (menu.includes(view)) {
-            currentView.value = view
-        }
+        currentView.value = view
     }
 
     return {

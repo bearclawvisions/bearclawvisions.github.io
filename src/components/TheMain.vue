@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import PortfolioSection from "@components/PortfolioSection.vue";
+import Terminal from "@components/Terminal.vue";
 import { ref } from 'vue';
 const currentView = ref('cv')
 </script>
 
 <template>
   <main class="neon-border">
-    <PortfolioSection :view="currentView" />
+    <Terminal :view="currentView" />
   </main>
 </template>
