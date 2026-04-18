@@ -22,6 +22,8 @@ const currentView = ref('cv')
       </p>
     </div>
     
+    <img src="@/assets/neon-retro-logo.png" alt="logo" class="bearclaw-logo" />
+    
     <nav>
       <button @click="currentView = 'cv'" :class="currentView === 'cv' ? 'active' : 'inactive'">
         [CV]
@@ -38,6 +40,6 @@ const currentView = ref('cv')
   </main>
 
   <footer>
-    © {{thisYear}} BearclawVisions - ALL RIGHTS RESERVED
+    © {{thisYear}} BearClawVisions - ALL RIGHTS RESERVED
   </footer>
 </template>

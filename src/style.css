@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════════════════════════ */
+/* [Variables] */
+/* ═══════════════════════════════════════════════════════════════ */
 @theme {
   --color-neon-pink: #ff00ff;
   --color-neon-cyan: #00ffff;
@@ -7,6 +10,9 @@
   --color-retro-bg: #0d0221;
 }
 
+/* ═══════════════════════════════════════════════════════════════ */
+/* [Base] */
+/* ═══════════════════════════════════════════════════════════════ */
 @layer base {
   body {
     @apply bg-retro-bg text-neon-cyan font-mono overflow-x-hidden;
@@ -87,8 +93,7 @@
     95% { opacity: 0.67834; }
     100% { opacity: 0.24387; }
   }
-
-  /* Scanline animation */
+  
   .scanlines {
     background: linear-gradient(
             to bottom,
@@ -106,6 +111,9 @@
   }
 }
 
+/* ═══════════════════════════════════════════════════════════════ */
+/* [General] */
+/* ═══════════════════════════════════════════════════════════════ */
 #app {
   @apply min-h-screen relative flex flex-col items-center justify-center p-4;
 }
@@ -131,6 +139,13 @@
   @apply text-neon-cyan border border-neon-cyan;
 }
 
+.bearclaw-logo {
+  @apply w-auto h-14;
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* [Identity] */
+/* ═══════════════════════════════════════════════════════════════ */
 .portfolio-container {
   @apply space-y-8;
 }
@@ -151,6 +166,9 @@
   @apply text-[0.625rem] border border-neon-green px-2 py-0.5;
 }
 
+/* ═══════════════════════════════════════════════════════════════ */
+/* [Experience] */
+/* ═══════════════════════════════════════════════════════════════ */
 .experience-container {
   @apply space-y-4;
 }
