@@ -6,9 +6,9 @@
   ],
   "general": {
     "app": "BearClawVisions",
-    "kernel": "1.0.0",
     "system": "online",
-    "status": "operational"
+    "status": "operational",
+    "kernel": "1.0.0"
   },
   "projects": {
     "work": [

@@ -1,0 +1,37 @@
+export interface Skills {
+    frontend: string[]
+    backend: string[]
+    tools: string[]
+    softSkills: string[]
+}
+
+export interface Projects {
+    work: string[]
+    personal: string[]
+}
+
+export interface General {
+    app: string
+    system: string
+    status: string
+    kernel: string
+}
+
+export interface User {
+    name: string
+    role: string
+    location: string
+    github: string
+    summary: string
+    speech: string[]
+    hobbies: string[]
+    certificates: string[]
+}
+
+export interface AppData {
+    menu: string[]
+    general: General
+    projects: Projects
+    skills: Skills
+    user: User
+}

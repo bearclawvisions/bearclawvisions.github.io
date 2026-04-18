@@ -39,7 +39,7 @@
   }
   
   h1 {
-    @apply text-4xl font-bold text-neon-pink tracking-tighter;
+    @apply text-4xl text-neon-pink uppercase font-semibold;
   }
   
   h2 {
@@ -128,7 +128,7 @@
 }
 
 .sub-header {
-  @apply text-xs uppercase tracking-widest text-neon-cyan;
+  @apply text-xs uppercase tracking-wide;
 }
 
 .active {
@@ -136,7 +136,7 @@
 }
 
 .inactive {
-  @apply text-neon-cyan border border-neon-cyan;
+  @apply border border-neon-cyan;
 }
 
 .bearclaw-logo {
