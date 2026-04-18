@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useViewStore } from '@/assets/store.ts';
 import { menu, general } from '@/assets/data.ts';
+import type {Menu} from "@/assets/types.ts";
 
-const { setView, currentView } = useViewStore()
+const { setView, currentView } = useViewStore();
 const generalEntries = Object.entries(general).slice(1);
+const menuKeys = Object.keys(menu) as Array<keyof Menu>;
 </script>
 
 <template>
@@ -26,7 +28,7 @@ const generalEntries = Object.entries(general).slice(1);
     </div>
 
     <nav>
-      <template v-for="item in menu" :key="item">
+      <template v-for="item in menuKeys" :key="item">
         <button @click="setView(item)" :class="currentView === item ? 'active' : 'inactive'">
           [{{ item }}]
         </button>
