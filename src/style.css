@@ -23,7 +23,8 @@
   }
   
   header {
-    @apply z-10 w-full max-w-5xl mb-8 flex justify-between items-end border-b-2 border-neon-pink pb-2;
+    @apply flex flex-col w-full mb-8 justify-center items-center border-b-2 border-neon-pink pb-2;
+    @apply md:flex-row md:max-w-5xl md:justify-between md:items-end;
   }
   
   nav {
@@ -39,19 +40,27 @@
   }
   
   h1 {
-    @apply text-4xl text-neon-pink uppercase font-semibold;
+    @apply text-3xl text-neon-pink uppercase font-semibold;
+    @apply md:text-4xl;
   }
   
   h2 {
-    @apply text-2xl mb-4 text-neon-green;
+    @apply text-lg mb-4 text-neon-green;
+    @apply md:text-2xl;
   }
   
   h3 {
-    @apply text-xl mb-2 text-neon-pink uppercase;
+    @apply text-sm mb-2 text-neon-pink uppercase;
+    @apply md:text-xl;
   }
   
   a {
     @apply hover:underline cursor-pointer hover:text-neon-pink;
+  }
+  
+  p {
+    @apply text-xs;
+    @apply md:text-base;
   }
   
   button {
@@ -158,7 +167,8 @@
 }
 
 .sub-header {
-  @apply text-xs uppercase tracking-wide;
+  @apply flex flex-col text-xs uppercase tracking-wide mb-2;
+  @apply md:flex-row md:gap-12 md:mb-0;
 }
 
 .active {
@@ -170,7 +180,8 @@
 }
 
 .bearclaw-logo {
-  @apply flex justify-center w-full h-100;
+  @apply flex justify-center w-full h-auto;
+  @apply md:h-100;
 }
 
 /* ═══════════════════════════════════════════════════════════════ */

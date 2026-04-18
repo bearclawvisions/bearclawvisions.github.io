@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {terminal, admin, skills} from "@/assets/data.ts";
+import {terminal, admin} from "@/assets/data.ts";
 
 const adminGeneric = Object.entries(admin).slice(0, 4);
 // const adminSupplemental = Object.entries(admin).slice(3, 4);
@@ -17,7 +17,7 @@ const hobbies = admin.hobbies;
           <div class="admin-info">
             <p>{{ key }}:</p>
             <p v-if="index !== adminGeneric.length - 1">[{{ value }}]</p>
-            <p v-else><a href="{{value}}" target="_blank">[{{ value }}]</a></p>
+            <p v-else><a :href="`https://${value}`" target="_blank">[{{ value }}]</a></p>
           </div>
         </template>
       </div>
