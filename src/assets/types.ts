@@ -17,7 +17,7 @@ export interface General {
     kernel: string
 }
 
-export interface User {
+export interface Admin {
     name: string
     role: string
     location: string
@@ -30,7 +30,7 @@ export interface User {
 
 export interface Menu {
     home: string
-    user: string
+    admin: string
     projects: string
 }
 
@@ -39,5 +39,5 @@ export interface AppData {
     general: General
     projects: Projects
     skills: Skills
-    user: User
+    admin: Admin
 }

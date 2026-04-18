@@ -1,7 +1,7 @@
 {
   "menu": {
     "home": "home",
-    "user": "user",
+    "admin": "admin",
     "projects": "projects"
   },
   "general": {
@@ -70,7 +70,7 @@
       "Agile"
     ]
   },
-  "user": {
+  "admin": {
     "name": "Classified",
     "role": "Software Engineer",
     "location": "The grid",

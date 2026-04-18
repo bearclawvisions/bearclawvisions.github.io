@@ -10,7 +10,7 @@ const { currentView } = useViewStore()
 
 const componentMap = {
   [menu.home]: TerminalHome,
-  [menu.user]: TerminalUser,
+  [menu.admin]: TerminalUser,
   [menu.projects]: TerminalProjects,
 }
 
