@@ -50,6 +50,10 @@
     @apply text-xl mb-2 text-neon-pink uppercase;
   }
   
+  a {
+    @apply hover:underline cursor-pointer hover:text-neon-pink;
+  }
+  
   button {
     @apply px-4 py-1 uppercase text-sm font-bold hover:scale-105 transition-transform;
   }
@@ -119,6 +123,22 @@
     content: "_";
     animation: blink 1s infinite;
   }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(30, end);
+    animation-delay: 0s, 3s;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════ */
@@ -164,7 +184,11 @@
   @apply border border-neon-cyan/30 p-4;
 }
 
-.tech-stack-container {
+.admin-info {
+  @apply flex flex-row justify-between uppercase;
+}
+
+.tag-container {
   @apply flex flex-wrap gap-2;
 }
 
@@ -172,7 +196,7 @@
   @apply grid grid-cols-1 md:grid-cols-2 gap-4;
 }
 
-.skill-tag {
+.tag-item {
   @apply text-[0.625rem] border border-neon-green px-2 py-0.5;
 }
 

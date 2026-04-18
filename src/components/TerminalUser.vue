@@ -1,29 +1,56 @@
 <script setup lang="ts">
-import {terminal} from "@/assets/data.ts";
+import {terminal, admin, skills} from "@/assets/data.ts";
 
-const skills = ['Vue.js', 'TypeScript', 'Tailwind', 'Node.js', 'C++', 'ASM']
-
+const adminGeneric = Object.entries(admin).slice(0, 4);
+// const adminSupplemental = Object.entries(admin).slice(3, 4);
+const hobbies = admin.hobbies;
 </script>
 
 <template>
   <section>
-    <h2 class="blinking-cursor">{{terminal}} INITIALIZING_IDENTITY...</h2>
+    <h2 class="blinking-cursor">{{terminal}} INITIALIZING_IDENTITY</h2>
     <div class="identity-container">
+      
       <div class="mini-container">
         <h3>// ADMIN_INFORMATION</h3>
-        <p>NAME: [CLASSIFIED]</p>
-        <p>ROLE: FULLSTACK_DEVELOPER</p>
-        <p>LOCATION: CYBER_SPACE</p>
+        <template v-for="([key, value], index) in adminGeneric" :key="key">
+          <div class="admin-info">
+            <p>{{ key }}:</p>
+            <p v-if="index !== adminGeneric.length - 1">[{{ value }}]</p>
+            <p v-else><a href="{{value}}" target="_blank">[{{ value }}]</a></p>
+          </div>
+        </template>
       </div>
+
       <div class="mini-container">
-        <h3>// TECHNICAL_STACK</h3>
-        <div class="tech-stack-container">
-            <span v-for="skill in skills" :key="skill"
-                  class="skill-tag">
-              {{ skill }}
-            </span>
+        <h3>// HOBBIES</h3>
+        <div class="tag-container">
+          <span v-for="hobby in hobbies" :key="hobby" class="tag-item">
+            {{ hobby }}
+          </span>
         </div>
       </div>
+
+<!--      <div class="mini-container">-->
+<!--        <h3>// TECHNICAL_STACK</h3>-->
+<!--        <div class="tag-container">-->
+<!--            <span v-for="skill in skills" :key="skill"-->
+<!--                  class="tag-item">-->
+<!--              {{ skill }}-->
+<!--            </span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="mini-container">-->
+<!--        <h3>// TECHNICAL_STACK</h3>-->
+<!--        <div class="tag-container">-->
+<!--            <span v-for="skill in skills" :key="skill"-->
+<!--                  class="tag-item">-->
+<!--              {{ skill }}-->
+<!--            </span>-->
+<!--        </div>-->
+<!--      </div>-->
+      
     </div>
   </section>
 

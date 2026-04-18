@@ -75,17 +75,18 @@
     "role": "Software Engineer",
     "location": "The grid",
     "github": "https://github.com/BearClawVisions",
-    "summary": "I am a software engineer with a passion for creating innovative solutions.",
+    "summary": "Software engineer with a passion for creating innovative solutions.",
     "speech": [
       "Dutch",
       "English"
     ],
     "hobbies": [
       "Gaming",
+      "Strength training",
       "3D printing",
       "Board games",
       "Programming",
-      "Gamedev"
+      "Game development"
     ],
     "certificates": [
       "Cisco Ethical Hacking",
