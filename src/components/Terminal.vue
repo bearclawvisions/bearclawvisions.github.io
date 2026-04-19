@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import {useViewStore} from "@/assets/store.ts";
 import {menu} from "@/assets/data.ts";
+import {computed} from "vue";
+
 import TerminalHome from "@components/TerminalHome.vue";
 import TerminalProjects from "@components/TerminalProjects.vue";
 import TerminalUser from "@components/TerminalUser.vue";
-import {computed} from "vue";
+import TerminalLoading from "@components/TerminalLoading.vue";
 
-const { currentView } = useViewStore()
+const { currentView, showLoading } = useViewStore()
 
 const componentMap = {
   [menu.home]: TerminalHome,
@@ -19,6 +21,7 @@ const activeComponent = computed(() => componentMap[currentView.value])
 
 <template>
   <div class="terminal-container">
-    <component :is="activeComponent" />
+    <TerminalLoading v-if="showLoading" />
+    <component v-else :is="activeComponent" />
   </div>
 </template>

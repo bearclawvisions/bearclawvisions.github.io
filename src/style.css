@@ -235,3 +235,39 @@
 .pink-li {
   @apply absolute -left-1.25 top-2 w-2 h-2 bg-neon-pink;
 }
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* [Loading bar] */
+/* ═══════════════════════════════════════════════════════════════ */
+.loading-wrapper {
+  @apply absolute inset-0 flex justify-center items-center;
+}
+
+.loading-container {
+  @apply space-y-2 w-full max-w-75 text-center;
+}
+
+.loading-text {
+  @apply text-neon-green uppercase tracking-widest;
+}
+
+.progress-bar {
+  @apply w-full max-w-md;
+}
+
+.bar-border {
+  @apply border-3 border-neon-cyan p-1;
+}
+
+.segments {
+  @apply flex gap-1;
+}
+
+.segment {
+  @apply flex-1 h-6 border border-neon-cyan transition-all duration-100 bg-transparent;
+}
+
+.segment.filled {
+  @apply bg-neon-green;
+  box-shadow: 0 0 0.5rem var(--color-neon-green), inset 0 0 0.3rem var(--color-neon-green);
+}

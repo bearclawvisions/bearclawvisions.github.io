@@ -6,14 +6,21 @@ let storeInstance: ReturnType<typeof createViewStore> | null = null;
 
 const createViewStore = () => {
     const currentView = ref<keyof Menu>(menu.home as keyof Menu);
+    const showLoading = ref(true);
 
     const setView = (view: keyof Menu) => {
         currentView.value = view;
     };
+    
+    const hideLoading = () => {
+        showLoading.value = false;
+    }
 
     return { 
         currentView,
-        setView
+        setView,
+        showLoading,
+        hideLoading
     };
 };
 
