@@ -23,44 +23,36 @@
   },
   "skills": {
     "frontend": [
-      "JavaScript",
-      "TypeScript",
+      "JS",
+      "TS",
       "Vue3",
       "TailwindCSS",
       "Bootstrap",
       "jQuery"
     ],
     "backend": [
-      "C#",
-      "ASP.NET",
+      "C#/.NET",
       "Java",
-      "Spring Boot",
       "Python",
-      "NodeJS",
+      "Spring Boot",
       "PostgreSQL",
       "SQL Server",
-      "REST API",
+      "REST",
       "SOAP",
       "WCF",
       "Hangfire",
       "ElasticSearch",
-      "XSLT",
-      "XML",
-      "JSON"
+      "XSLT"
     ],
     "tools": [
       "Maven",
       "Docker",
       "Kubernetes",
       "Azure",
-      "AWS",
       "Git",
       "Jira",
       "Fiddler",
       "Postman",
-      "Jetbrains IDE's",
-      "Visual Studio",
-      "Azure DevOps",
       "CI/CD",
       "IIS"
     ],
@@ -86,15 +78,15 @@
       "3D printing",
       "Board games",
       "Programming",
-      "Game development"
+      "Game dev",
+      "BBQ"
     ],
     "certificates": [
-      "Cisco Ethical Hacking",
       "Microsoft AZ-900",
+      "Awaretrain AVG awareness training", 
       "iSQI ISTQB Tester",
       "upd Greenbelt Lean",
-      "EXIN Agile Scrum Foundation",
-      "Awaretrain AVG awareness training" 
+      "EXIN Agile Scrum Foundation"
     ]
   }
 }
