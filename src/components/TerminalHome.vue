@@ -3,9 +3,7 @@ import {terminal} from "@/assets/data.ts";
 </script>
 
 <template>
-  <h2 class="blinking-cursor">
-    {{terminal}} WELCOME //GUEST_USER
-  </h2>
+  <h2 class="blinking-cursor">{{terminal}} WELCOME //GUEST_USER</h2>
   <div>
     Use the top-right navigation to view information about the system admin.
   </div>

@@ -10,9 +10,7 @@ const other = skills.softSkills;
 </script>
 
 <template>
-    <h2 class="blinking-cursor">
-      {{terminal}} INITIALIZING_IDENTITY
-    </h2>
+    <h2 class="blinking-cursor">{{terminal}} INITIALIZING_IDENTITY</h2>
     
     <div class="identity-container">
       

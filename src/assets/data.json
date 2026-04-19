@@ -18,7 +18,11 @@
       "web application to search diaries with ElasticSearch"
     ],
     "personal": [
-      "website with Githup pages"
+      "Website with Github pages",
+      "Advent of Code Java",
+      "Advent of Code C#",
+      "Supermarket Java",
+      "Supermarket C#"
     ]
   },
   "skills": {

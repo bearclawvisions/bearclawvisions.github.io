@@ -32,7 +32,7 @@
   }
   
   main { /*terminal area*/
-    @apply w-full max-w-5xl bg-black/80 p-6 min-h-150 relative overflow-y-scroll;
+    @apply w-full max-w-5xl bg-black/80 p-6 min-h-150 max-h-150 relative overflow-y-scroll;
   }
   
   footer {
@@ -205,22 +205,31 @@
 }
 
 .tag-item {
-  @apply text-[0.625rem] border border-neon-green px-2 py-0.5;
+  @apply text-[0.7rem] border border-neon-green px-2 py-0.5;
 }
 
 /* ═══════════════════════════════════════════════════════════════ */
-/* [Experience] */
+/* [Projects] */
 /* ═══════════════════════════════════════════════════════════════ */
-.experience-container {
-  @apply space-y-4;
+.accordion-button {
+  @apply flex gap-2 font-normal text-neon-green items-center;
+  @apply md:text-base;
 }
 
-.experience-item {
-  @apply relative pl-6 border-l border-neon-pink/50;
+.svg-icon {
+  @apply w-4 h-4 border;
 }
 
-.experience-item.faded {
-  @apply opacity-70;
+.accordion-content-hidden {
+  @apply hidden;
+}
+
+.accordion-content-visible {
+  @apply max-h-96 overflow-y-scroll;
+}
+
+.project-item {
+  @apply relative pl-4 border-l border-neon-pink/50 mb-4;
 }
 
 .pink-li {
