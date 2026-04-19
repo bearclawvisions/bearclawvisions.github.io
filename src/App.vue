@@ -7,6 +7,7 @@ import TheMain from "@components/TheMain.vue";
 <template>
   <div class="scanlines"></div>
   <TheHeader/>
+  <div class="neon-divider"></div>
   <TheMain/>
   <TheFooter/>
 </template>

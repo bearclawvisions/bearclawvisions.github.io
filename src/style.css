@@ -23,7 +23,7 @@
   }
   
   header {
-    @apply flex flex-col w-full mb-8 justify-center items-center border-b-2 border-neon-pink pb-2;
+    @apply flex flex-col w-full justify-center items-center;
     @apply md:flex-row md:max-w-5xl md:justify-between md:items-end;
   }
   
@@ -155,6 +155,10 @@
 /* ═══════════════════════════════════════════════════════════════ */
 #app {
   @apply min-h-screen relative flex flex-col items-center justify-center p-4;
+}
+
+.neon-divider {
+  @apply w-full h-0.5 bg-neon-pink my-3;
 }
 
 .neon-border {
