@@ -9,7 +9,7 @@ const menuKeys = Object.keys(menu) as Array<keyof Menu>;
 </script>
 
 <template>
-  <header>
+  <header class="neon-border">
     
     <div>
       <h1 class="neon-text">
@@ -32,6 +32,5 @@ const menuKeys = Object.keys(menu) as Array<keyof Menu>;
         </button>
       </template>
     </nav>
-    
   </header>
 </template>
