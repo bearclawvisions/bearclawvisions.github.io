@@ -6,7 +6,6 @@ import TheBackground from "@components/TheBackground.vue";
 </script>
 
 <template>
-  <div class="scanlines"></div>
   <TheBackground/>
   <TheHeader/>
   <div class="neon-divider"></div>
