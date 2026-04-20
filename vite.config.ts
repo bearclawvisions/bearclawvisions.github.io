@@ -16,4 +16,9 @@ export default defineConfig({
             '@views': fileURLToPath(new URL('./src/views', import.meta.url)),
         },
     },
+    server: {
+        headers: {
+            'Content-Security-Policy': "default-src 'self'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests;"
+        }
+    },
 })
