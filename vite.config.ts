@@ -18,7 +18,7 @@ export default defineConfig({
     },
     server: {
         headers: {
-            'Content-Security-Policy': "default-src 'self'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests;"
+            'Content-Security-Policy': "default-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; upgrade-insecure-requests;"
         }
     },
 })
