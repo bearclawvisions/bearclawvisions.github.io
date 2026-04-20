@@ -32,7 +32,7 @@
   }
   
   main { /*terminal area*/
-    @apply w-full max-w-5xl bg-black/80 p-6 min-h-150 max-h-150 relative overflow-y-scroll;
+    @apply w-full max-w-5xl bg-black/80 p-6 min-h-150 max-h-150 relative overflow-y-auto;
   }
   
   footer {
