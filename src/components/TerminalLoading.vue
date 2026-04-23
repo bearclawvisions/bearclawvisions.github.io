@@ -11,7 +11,7 @@ const loadingTexts: string[] = [
     'AUTHENTICATING USER',
     'AUTHORIZING ACCESS',
     'LOADING DATA',
-    'POLISHING LIGHTSABER',
+    'ASSEMBLING LIGHTSABER',
     'COMPLETED',
 ];
 
