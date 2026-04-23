@@ -205,7 +205,7 @@
 }
 
 .tag-item {
-  @apply text-[0.7rem] border border-neon-green px-2 py-0.5;
+  @apply text-xs border border-neon-green px-2 py-0.5;
 }
 
 /* ═══════════════════════════════════════════════════════════════ */

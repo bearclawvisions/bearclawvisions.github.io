@@ -5,14 +5,14 @@ import {computed} from "vue";
 
 import TerminalHome from "@components/TerminalHome.vue";
 import TerminalProjects from "@components/TerminalProjects.vue";
-import TerminalUser from "@components/TerminalUser.vue";
+import TerminalAdmin from "@components/TerminalAdmin.vue";
 import TerminalLoading from "@components/TerminalLoading.vue";
 
 const { currentView, showLoading } = useViewStore()
 
 const componentMap = {
   [menu.home]: TerminalHome,
-  [menu.admin]: TerminalUser,
+  [menu.admin]: TerminalAdmin,
   [menu.projects]: TerminalProjects,
 }
 
