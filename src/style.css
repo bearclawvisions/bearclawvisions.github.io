@@ -225,11 +225,11 @@
 }
 
 .accordion-content-visible {
-  @apply max-h-96;
+  @apply block;
 }
 
 .project-item {
-  @apply relative pl-4 border-l border-neon-pink/50 mb-4;
+  @apply relative pl-4 border-l border-neon-pink/50 mb-4 space-y-1;
 }
 
 .pink-li {
