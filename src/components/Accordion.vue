@@ -34,7 +34,7 @@ defineProps<Props>();
     </button>
     
     <div :class="isOpen[id] ? 'accordion-content-visible' : 'accordion-content-hidden'">
-      <template v-for="project in projects" :key="project">
+      <template v-for="(project, index) in projects" :key="id + index">
         <div class="project-item">
           <div class="pink-li"></div>
           <h3>{{ project.sourceType }} SOURCE</h3>
