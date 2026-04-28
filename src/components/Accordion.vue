@@ -5,7 +5,6 @@ interface Props {
   id: number;
   title: string;
   projects: ProjectInfo[];
-  sourceType: 'CLOSED SOURCE' | 'GITHUB SOURCE';
   isOpen: Record<number, boolean>;
 }
 
@@ -38,7 +37,7 @@ defineProps<Props>();
       <template v-for="project in projects" :key="project">
         <div class="project-item">
           <div class="pink-li"></div>
-          <h3>{{ sourceType }}</h3>
+          <h3>{{ project.sourceType }} SOURCE</h3>
           <p>{{ project.name }}</p>
 <!--          <button class="pink-button">[MORE INFO]</button>-->
         </div>

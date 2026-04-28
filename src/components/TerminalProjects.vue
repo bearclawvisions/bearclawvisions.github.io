@@ -13,7 +13,6 @@ const isOpen = reactive<Record<number, boolean>>({});
       :id="1"
       title="WORK"
       :projects="workProjects"
-      source-type="CLOSED SOURCE"
       :is-open="isOpen"
   />
 
@@ -21,7 +20,6 @@ const isOpen = reactive<Record<number, boolean>>({});
       :id="2"
       title="PERSONAL"
       :projects="personalProjects"
-      source-type="GITHUB SOURCE"
       :is-open="isOpen"
   />
 </template>

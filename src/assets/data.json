@@ -15,21 +15,25 @@
       {
         "name": "platforms for schools and universities to manage their students and assessments",
         "url": "",
+        "sourceType": "CLOSED",
         "description": ""
       },
       {
         "name": "background application to transform XML to PDF for publication of books",
         "url": "",
+        "sourceType": "CLOSED",
         "description": ""
       },
       {
         "name": "generation of metadata for images with AI",
         "url": "",
+        "sourceType": "CLOSED",
         "description": ""
       },
       {
         "name": "web application to search diaries with ElasticSearch",
         "url": "",
+        "sourceType": "CLOSED",
         "description": ""
       }
     ],
@@ -37,31 +41,37 @@
       {
         "name": "Website with Github pages",
         "url": "https://bearclawvisions.github.io",
+        "sourceType": "GITHUB",
         "description": "This website is built with Vue3, TailwindCSS and hosted on Github pages."
       },
       {
         "name": "Advent of Code Java",
         "url": "https://github.com/bearclawvisions/AdventOfCodeJava",
+        "sourceType": "GITHUB",
         "description": "A collection of solutions to Advent of Code challenges in Java."
       },
       {
         "name": "Advent of Code C#",
         "url": "https://github.com/bearclawvisions/AdventOfCode",
+        "sourceType": "GITHUB",
         "description": "A collection of solutions to Advent of Code challenges in C#."
       },
       {
         "name": "Supermarket Java",
         "url": "https://github.com/bearclawvisions/supermarket_java",
+        "sourceType": "GITHUB",
         "description": "A Java application for managing supermarket inventory and sales."
       },
       {
         "name": "Supermarket C#",
         "url": "https://github.com/bearclawvisions/SupermarketVue",
+        "sourceType": "GITHUB",
         "description": "A C# application for managing supermarket inventory and sales."
       },
       {
         "name": "DwarfQuest",
         "url": "https://github.com/bearclawvisions/DwarfQuest",
+        "sourceType": "GITHUB",
         "description": "A C# game project with Godot in the idea of a classic turn-based RPG."
       }
     ]

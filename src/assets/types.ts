@@ -8,6 +8,7 @@ export interface Skills {
 export interface ProjectInfo {
     name: string
     url: string
+    sourceType: string
     description: string
 }
 
