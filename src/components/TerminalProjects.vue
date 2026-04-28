@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import {projects, terminal} from "@/assets/data.ts";
+import {workProjects, personalProjects, terminal} from "@/assets/data.ts";
 import {reactive} from "vue";
 import Accordion from "@/components/Accordion.vue";
-
-const workProjects = projects.work;
-const personalProjects = projects.personal;
 
 const isOpen = reactive<Record<number, boolean>>({});
 </script>

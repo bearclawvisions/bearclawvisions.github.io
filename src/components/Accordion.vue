@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import type {ProjectInfo} from "@/assets/types.ts";
+
 interface Props {
   id: number;
   title: string;
-  projects: string[];
+  projects: ProjectInfo[];
   sourceType: 'CLOSED SOURCE' | 'GITHUB SOURCE';
   isOpen: Record<number, boolean>;
 }
@@ -37,7 +39,8 @@ defineProps<Props>();
         <div class="project-item">
           <div class="pink-li"></div>
           <h3>{{ sourceType }}</h3>
-          <p>{{ project }}</p>
+          <p>{{ project.name }}</p>
+<!--          <button class="pink-button">[MORE INFO]</button>-->
         </div>
       </template>
     </div>

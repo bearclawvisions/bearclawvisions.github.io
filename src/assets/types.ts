@@ -5,9 +5,15 @@ export interface Skills {
     softSkills: string[]
 }
 
+export interface ProjectInfo {
+    name: string
+    url: string
+    description: string
+}
+
 export interface Projects {
-    work: string[]
-    personal: string[]
+    work: ProjectInfo[]
+    personal: ProjectInfo[]
 }
 
 export interface General {
