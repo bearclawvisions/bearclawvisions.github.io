@@ -8,7 +8,9 @@ import TheBackground from "@components/TheBackground.vue";
 <template>
   <TheBackground/>
   <TheHeader/>
-  <div class="neon-divider"></div>
+  <div class="neon-divider">
+    
+  </div>
   <TheMain/>
   <TheFooter/>
 </template>
